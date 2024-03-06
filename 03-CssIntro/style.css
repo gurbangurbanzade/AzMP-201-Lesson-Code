@@ -1,0 +1,110 @@
+* {
+  /* background-color: red; */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: blue;
+}
+h2 {
+  color: purple;
+}
+.header {
+  color: brown;
+}
+
+.world {
+  background-color: blue;
+}
+
+#secondText {
+  background-color: green;
+}
+
+#secondStudent {
+  color: blue;
+}
+
+.name {
+  color: green;
+  background-color: yellow;
+}
+
+p {
+  color: red;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  /* background-color: red; */
+  /* background-color: rgb(129, 172, 102);
+  background-color: rgba(129, 172, 102, 0.399);
+  background-color: #b106a6;
+  background-color: #b106a6;
+  background-color: hsl(0, 100%, 50%);
+  background-color: hsla(0, 100%, 50%, 50%); */
+}
+
+.box1 {
+  /* box-sizing: border-box; */
+  /* box-sizing: content-box; */
+  width: 100px;
+  height: 100px;
+  /* margin-bottom: 20px; */
+  padding: 30px;
+  border: 5px solid black;
+}
+
+.box2 {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  padding-left: 10px;
+  margin: 40px;
+  /* margin-bottom: 20px; */
+  /* padding: 30px; */
+}
+
+.box3 {
+  /* box-sizing: border-box; */
+  width: 100px;
+  height: 100px;
+  border-right: 5px solid black;
+  border: 10px solid black;
+  padding: 5px;
+  padding-left: 10px;
+  margin: 40px;
+  /* margin-bottom: 20px; */
+  /* padding: 30px; */
+}
+
+/* eni 100 20 15
+
+hun 100 20 10
+
+*/
+
+.box3 {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-right: 5px solid black;
+  border: 10px solid black;
+  border-left: 5px solid black;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 40px;
+  /* margin-bottom: 20px; */
+  /* padding: 30px; */
+}
+
+/* eni 100 20 15
+  
+  hun 100 20 10
+  
+  */
