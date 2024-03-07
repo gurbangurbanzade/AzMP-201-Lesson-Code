@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        width: 800px;
+        height: 800px;
+        background-color: gray;
+
+        /* flex */
+
+        display: flex;
+
+        flex-direction: column;
+
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start; */
+        justify-content: space-evenly;
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+
+        align-items: center;
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+    </div>
+  </body>
+</html>
