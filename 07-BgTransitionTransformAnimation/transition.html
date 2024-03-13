@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: gray;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* padding: 50%; */
+      }
+
+      .item {
+        width: 10rem;
+        height: 10rem;
+        position: relative;
+        background-color: yellow;
+        /* transition-property: background-color; */
+        /* transition: all;
+        transition-duration: 5s;
+        transition-timing-function: ease-in-out; */
+        /* transition-delay: 2s; */
+        border-left: 5px solid red;
+        /* position: relative; */
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        /* margin: auto; */
+
+        /* animation: boxItem; */
+        animation-duration: 6s;
+        /* animation-delay: 2s; */
+        animation-timing-function: ease-in-out;
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: backwards;  */
+        /* animation-iteration-count: 2; */
+        /* animation-iteration-count: infinite; */
+        /* animation-direction: alternate-reverse; */
+        top: 0;
+        left: 0;
+      }
+
+      @keyframes boxItem {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        20% {
+          left: 100px;
+          top: 0;
+        }
+
+        40% {
+          top: 100px;
+          left: 100px;
+        }
+        60% {
+          left: 200px;
+          top: 100px;
+        }
+        80% {
+          top: 200px;
+          left: 200px;
+        }
+        100% {
+          left: 300px;
+          top: 200px;
+        }
+      }
+
+      .item:hover {
+        /* width: 20rem;
+        height: 20rem; */
+        /* border-radius: 50%; */
+        /* background-color: red; */
+        /* transform: rotate(90deg); */
+        /* transform: rotate(180deg); */
+        /* transform: skew(-90deg); */
+        /* transform: scale(2); */
+        /* transform: scaleX(2); */
+        /* transform: translate(-100%); */
+      }
+      h1 {
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item"></div>
+    <h1 class="animate__animated animate__bounceInLeft">Hello WORLD</h1>
+  </body>
+</html>
