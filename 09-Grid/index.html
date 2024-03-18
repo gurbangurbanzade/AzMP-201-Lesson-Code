@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: gray;
+        /* height: 500px; */
+        width: 100%;
+
+        display: grid;
+
+        /* grid-template-columns: 100px auto 50px; */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 70px auto;
+        /* grid-template-columns: repeat(3, 1fr) 100px; */
+      }
+
+      .item {
+        /* padding: 30px; */
+        text-align: center;
+        background-color: yellow;
+        font-size: 30px;
+        border: 1px solid black;
+      }
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: green;
+      }
+      .item2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: pink;
+      }
+      .item4 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: blue;
+      }
+      .item5 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      .item6 {
+        /* grid-column-start: 1;
+        grid-column-end: 4; */
+
+        grid-row-start: 5;
+        grid-row-end: 7;
+      }
+
+      .item7 {
+        grid-column: 2/4;
+      }
+      .item8 {
+        grid-column: 2 / 3;
+      }
+      /* .item7 {
+        grid-column: 2/4;
+      } */
+      .item10 {
+        grid-column: 1 / spam 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+      <div class="item item5">Header</div>
+      <div class="item item6">Aside</div>
+      <div class="item item7">content 1</div>
+      <div class="item item8">content 2</div>
+      <div class="item item9">9</div>
+      <div class="item item10">Footer</div>
+    </div>
+  </body>
+</html>

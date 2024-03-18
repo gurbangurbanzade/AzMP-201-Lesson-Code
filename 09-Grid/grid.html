@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: gray;
+        /* height: 500px; */
+        width: 100%;
+        gap: 10px;
+
+        display: grid;
+
+        /* grid-template-columns: 100px auto 50px; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-rows: 200px 200px 200px; */
+        /* grid-template-columns: repeat(3, 1fr) 100px; */
+        /* grid-template-rows: 200px 200px 200px; */
+        grid-template-areas:
+          "header . side"
+          "main main side"
+          ". box box"
+          "item2 item2 item2"
+          "item3 item3 .";
+      }
+
+      .item {
+        /* padding: 30px; */
+        text-align: center;
+        background-color: yellow;
+        font-size: 30px;
+        border: 1px solid black;
+      }
+      .item1 {
+        grid-area: header;
+        background-color: green;
+        /* grid-column: 1/2;
+        grid-row: 1/4; */
+      }
+      .item2 {
+        background-color: green;
+        grid-area: main;
+
+        /* grid-column: 2/4; */
+      }
+      .item3 {
+        background-color: red;
+        grid-area: side;
+      }
+      .item4 {
+        background-color: orange;
+        /* grid-area: main; */
+      }
+      .item5 {
+        /* grid-column-start: 1;
+        grid-column-end: 4; */
+        background-color: red;
+
+        grid-area: box;
+      }
+
+      .item6 {
+        background-color: blue;
+        grid-area: item2;
+
+        /* grid-column: 4/5; */
+        /* grid-row: 2/5; */
+      }
+      .item7 {
+        /* grid-column: 2/4; */
+        /* grid-row: 3/4; */
+        grid-area: item3;
+      }
+      /* .item7 {
+        grid-column: 2/4;
+      } */
+      .item10 {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">Navbar</div>
+      <div class="item item2">main</div>
+      <div class="item item3">side</div>
+      <div class="item item4">item</div>
+      <div class="item item5">box 1</div>
+      <div class="item item6">box 2</div>
+      <div class="item item7">7</div>
+      <!-- <div>salam</div> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+// @font-face {
+//   font-family: "lato";
+//   src: url("./../../../fonts/Lato-Regular.ttf");
+// }
+
+h1 {
+  font-family: "lato";
+}
+
+#header {
+  //   height: 96px;
+  padding: 28px 0px;
+  div {
+    @include flex(space-between, center);
+    height: 100%;
+
+    .leftSide {
+      div {
+        .fa-bars {
+          display: none;
+        }
+        .logoBox {
+          @include flex(space-between, center);
+          gap: 6px;
+          margin-right: 29px;
+        }
+        .fa-basket-shopping {
+          display: none;
+        }
+      }
+
+      .searchBox {
+        border: 1px solid $borderColor;
+        padding: 8px 12px;
+        border-radius: 4px;
+        div {
+          border-right: 1px solid $borderColor;
+          margin-right: 12px;
+          input {
+            border: none;
+          }
+        }
+      }
+    }
+
+    .rightSide {
+      @include flex(space-between, center);
+      ul {
+        @include flex(space-between, center);
+        list-style: none;
+        gap: 20px;
+        li {
+          font-family: "lato";
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #header {
+    .container {
+      display: flex;
+      flex-direction: column;
+      max-width: 811px;
+      gap: 12px;
+      .leftSide {
+        width: 100%;
+      }
+      .rightSide {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #header {
+    .container {
+      //   display: flex;
+      //   flex-direction: column;
+      //   max-width: 811px;
+      //   gap: 12px;
+      padding: 0 20px;
+      .leftSide {
+        // width: 100%;
+        flex-direction: column;
+        gap: 48px;
+
+        div {
+          width: 100%;
+          justify-content: space-between;
+          .fa-bars {
+            display: block;
+          }
+          .logoBox {
+            justify-content: center;
+            // display: inline-block;
+            // width: 30px;
+            margin: auto;
+          }
+
+          .fa-basket-shopping {
+            display: block;
+          }
+        }
+      }
+      .rightSide {
+        // width: 100%;
+
+        display: none;
+      }
+    }
+  }
+}
