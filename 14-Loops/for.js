@@ -97,5 +97,22 @@ let num2 = 3;
 // }
 
 // console.log(count);
-let name = "gurban";
-for (let i = 0; i < name.length; i++) {}
+// let name = "gurban";
+// let letter = "aeuio";
+// let count = 0;
+
+// for (let i = 0; i < name.length; i++) {
+//   for (let j = 0; j < letter.length; j++) {
+//     if (name[i] == letter[j]) {
+//       count++;
+//     }
+//   }
+// }
+
+// console.log(count);
+
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= 5; j++) {
+    console.log(`${i}x${j}=${i * j}`);
+  }
+}
