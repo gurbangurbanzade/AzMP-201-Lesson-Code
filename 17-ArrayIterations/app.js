@@ -378,3 +378,19 @@ let obj = {
 console.log(Object.entries(obj));
 console.log(Object.keys(obj));
 console.log(Object.values(obj));
+console.log("---------------------------------------------");
+
+result = students
+  .reduce((acc, elem) => {
+    acc.push(elem.hobbies);
+    return acc;
+  }, [])
+  .flat();
+// console.log(result);
+
+result = students.filter((elem) => {
+  console.log(elem.hobbies);
+
+  return elem.hobbies.includes("gaming");
+});
+console.log(result);
