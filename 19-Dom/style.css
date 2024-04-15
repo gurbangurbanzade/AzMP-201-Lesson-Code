@@ -1,0 +1,30 @@
+.addTodo {
+  padding: 20px;
+}
+.todoBox {
+  padding: 30px;
+}
+
+.todoItem {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  /* display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid black; */
+}
+
+.todoText {
+  padding: 0px;
+  padding-left: 10px;
+  margin: 0px;
+  /* border: 1px solid black; */
+}
+.deleteBtn {
+  /* background-color: red;
+  color: white;
+  border: 1px solid black; */
+}
