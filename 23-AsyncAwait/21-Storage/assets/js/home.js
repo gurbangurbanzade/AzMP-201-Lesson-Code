@@ -17,7 +17,7 @@ function changeCount() {
 }
 changeCount();
 // loader.style.display = "none";
-fetch("http://localhost:3000/products")
+fetch("https://fakestoreapi.com/products")
   .then((res) => res.json())
   .then((data) => {
     let mainData = data;
