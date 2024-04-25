@@ -1,6 +1,7 @@
 import LefSide from "./LefSide";
 import RightSide from "./rightSide";
 import "./style.css";
+import "./newStyle.scss";
 
 const Header = () => {
   return (
