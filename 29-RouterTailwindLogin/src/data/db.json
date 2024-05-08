@@ -30,8 +30,12 @@
     },
     {
       "id": "2",
-      "username": "gurban",
+      "userName": "gurban",
+      "name": "gurban",
+      "surname": "gurbanzada",
       "password": "123",
+      "email": "mail.com",
+      "isAdmin": false,
       "basket": [],
       "favorites": []
     },
