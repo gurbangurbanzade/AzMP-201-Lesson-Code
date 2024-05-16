@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addBasket, getCount } from "../../redux/slices/basketSlice";
 import { addFav } from "../../redux/slices/favoritesSlice";
-
+import { addBasketBf, addBasketCount } from "../../redux/slices/bfBasketSlices";
 const Home = () => {
   const basket = useSelector((state) => state.basket.bskt);
   const fav = useSelector((state) => state.fav.fav);
@@ -47,6 +47,16 @@ const Home = () => {
                 }}
               >
                 AddFav
+              </button>
+              <button
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                onClick={() => {
+                  // console.log(elem);
+                  dispatch(addBasketBf(elem));
+                  dispatch(addBasketCount());
+                }}
+              >
+                Add Basket BF
               </button>
             </li>
           );

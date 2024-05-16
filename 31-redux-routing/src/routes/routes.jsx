@@ -1,3 +1,4 @@
+import Basketbf from "../components/Basketbf";
 import Child from "../components/Child";
 import UserRoot from "../layout/UserRoot";
 import AdminPanel from "../pages/AdminPanel";
@@ -21,6 +22,10 @@ const routes = [
       {
         path: "/favorites",
         element: <Favorites />,
+      },
+      {
+        path: "/basketbf",
+        element: <Basketbf />,
       },
     ],
   },
